@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0"
+      prefWidth="550.0" spacing="25.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.ap.customer_appointment_app.controllers.AppointmentController">
+   <padding>
+      <Insets left="75.0" top="50.0" />
+   </padding>
+   <Label fx:id="appointmentLabel" text="New Appointment">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+      <VBox.margin>
+         <Insets bottom="25.0" />
+      </VBox.margin>
+   </Label>
+   <HBox>
+      <Label prefWidth="150.0" text="Title:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="titleText" prefWidth="250.0" promptText="Appointment title" style="-fx-background-radius: 7;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </TextField>
+   </HBox>
+   <HBox>
+      <Label prefWidth="150.0" text="Description:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="descriptionText" prefWidth="250.0" promptText="Appointment description" style="-fx-background-radius: 7;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </TextField>
+   </HBox>
+   <HBox>
+      <Label prefWidth="150.0" text="Location:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="locationText" prefWidth="250.0" promptText="Appointment location" style="-fx-background-radius: 7;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </TextField>
+   </HBox>
+   <HBox>
+      <Label prefWidth="150.0" text="Type:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="typeText" prefWidth="250.0" promptText="Appointment type" style="-fx-background-radius: 7;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </TextField>
+   </HBox>
+   <HBox>
+      <Label prefWidth="150.0" text="Contact:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="contactComboBox" prefWidth="250.0" promptText="Select contact" style="-fx-background-radius: 7;" />
+   </HBox>
+   <HBox>
+      <Label prefWidth="150.0" text="Customer ID:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="customerIDComboBox" prefWidth="250.0" promptText="Select customer ID" style="-fx-background-radius: 7;" />
+   </HBox>
+   <HBox>
+      <Label prefWidth="150.0" text="User ID:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="userIDComboBox" prefWidth="250.0" promptText="Select user ID" style="-fx-background-radius: 7;" />
+   </HBox>
+   <HBox>
+      <Label prefWidth="150.0" text="Start Date:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="startDatePicker" prefWidth="250.0" />
+   </HBox>
+   <HBox>
+      <Label minWidth="150.0" prefWidth="150.0" text="Start Time:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="startTimeComboBox" prefWidth="250.0" promptText="Select start time" />
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+   </HBox>
+   <HBox>
+      <Label prefWidth="150.0" text="End Date:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="endDatePicker" prefWidth="250.0" />
+   </HBox>
+   <HBox>
+      <Label minWidth="150.0" prefWidth="150.0" text="End Time:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="endTimeComboBox" prefWidth="250.0" promptText="Select end time" />
+   </HBox>
+   <HBox spacing="50.0">
+      <VBox.margin>
+         <Insets left="150.0" top="20.0" />
+      </VBox.margin>
+      <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelButtonAction" prefWidth="100.0" style="-fx-background-radius: 7;" text="Cancel">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveButtonAction" prefWidth="100.0" style="-fx-background-radius: 7;" text="Save">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </HBox>
+   <Label fx:id="notificationLabel" textFill="RED">
+      <VBox.margin>
+         <Insets top="25.0" />
+      </VBox.margin>
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+</VBox>
